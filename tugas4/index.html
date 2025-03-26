@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/style.css"/>
+    <style>
+         .content { display: none; }
+         .active { display: block; }
+    </style>
+
+</head>
+<body>
+
+    <div class="container mt-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="https://i.pinimg.com/736x/ce/20/0b/ce200b17c2b27084c52ce2ecbf17699e.jpg" 
+                alt="Logo" style="height: 50px;"> Ghibli Movie</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('about')">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showContent('contact')">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div style="height: 50px;"></div>
+
+        <div id="home" class="content active">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/25/4d/41/254d41c8de6fa7057c49122e187f0534.jpg" class="card-img-top" alt="totoro">
+                        <div class="card-body">
+                            <h5 class="card-title">Totoro</h5>
+                            <p class="card-text">Khail Adnan | Posted on 20 jan 2025. Lorem ipsum dolor sit amet...</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/e7/91/2b/e7912b28294b0b4b6bb7c61aabc8f2c4.jpg" class="card-img-top" alt="ponyo">
+                        <div class="card-body">
+                            <h5 class="card-title">Ponyo</h5>
+                            <p class="card-text">Carmen | Posted on 1 Feb 2025. Lorem ipsum dolor sit amet...</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/b5/fd/bf/b5fdbfcf4d7ec1b44e88f6c836bdb076.jpg" class="card-img-top" alt="rumah">
+                        <div class="card-body">
+                            <h5 class="card-title">View</h5>
+                            <p class="card-text">Zaki Azfar | Posted on 17 Feb 2025. Lorem ipsum dolor sit amet...</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="height: 50px;"></div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/79/85/3b/79853bbd9df9cb6be2afa194d33c3d37.jpg" class="card-img-top" alt="howl">
+                        <div class="card-body">
+                            <h5 class="card-title">Howl</h5>
+                            <p class="card-text">Zafira Adiva | Posted on 18 March  2025. Lorem ipsum dolor sit amet...</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/62/90/40/629040201b96210eb4d3e551165a1569.jpg" class="card-img-top" alt="mobil">
+                        <div class="card-body">
+                            <h5 class="card-title">Car</h5>
+                            <p class="card-text">Zalfaa Astiad | Posted on 7 Agt 2025. Lorem ipsum dolor sit amet...</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/fe/f4/24/fef4244fc9be461e85f54ad75078db92.jpg" class="card-img-top" alt="kucing tidur">
+                        <div class="card-body">
+                            <h5 class="card-title">Cat</h5>
+                            <p class="card-text">Haerin | Posted on 25 sept 2025. Lorem ipsum dolor sit amet...</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="contact" class="content">
+            <h2>Contact Me</h2>
+            <p>If you need help, please contact us via the form below</p>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group row">
+                    <div class="col">
+                        <label for="first-name">First Name</label>
+                        <input type="text" class="form-control" id="first-name" placeholder="Enter Name">
+                </div>
+                <div class="col">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" placeholder="Enter Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="form-control" id="first-name" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="terms">
+                    <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        function showContent(contentId) {
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+            document.getElementById(contentId).classList.add('active');
+        }
+    </script>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    
+</body>
+</html>

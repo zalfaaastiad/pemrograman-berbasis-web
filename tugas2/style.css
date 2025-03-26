@@ -1,0 +1,41 @@
+
+body {
+    font-family: Arial;
+}
+h1{
+    margin: 15px;
+    padding-top: 5%;
+    text-align: center;
+}
+form{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 370px;
+    margin-right: 370px;
+    
+    
+}
+button{
+    padding: 10px;
+    background-color: #3B82F6;
+    color:white;
+    border-radius: 5px;
+    cursor:pointer;
+}
+input[type="radio"]{
+    accent-color: #3B82F6;
+}
+input[type="text"], input[type="email"] {
+    width: 100%; 
+    max-width: 700px; 
+    height: 40px; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid #cbcaca;
+    border-radius: 5px;
+}
+
+
+
+
